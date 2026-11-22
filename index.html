@@ -30,6 +30,7 @@ a{color:#1a1a1a;text-decoration:underline;text-underline-offset:3px}
 .pill{font-size:11px;padding:3px 8px;border:1px solid #999;border-radius:0;background:transparent;color:#555}
 .nav{position:sticky;top:0;z-index:10;background:rgba(250,248,242,.96);border-bottom:1px solid #1a1a1a;margin:0 -20px;padding:8px 20px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
 @supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){.nav{background:rgba(250,248,242,.75);-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%)}}
+.nav{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='240' height='240' filter='url(%23n)' opacity='0.24'/></svg>");background-size:240px 240px}
 .nav::-webkit-scrollbar{display:none}
 .nav a{white-space:nowrap;text-decoration:none;font-size:15px;font-weight:700;padding:6px 12px;color:#1a1a1a;display:inline-flex;align-items:center;min-height:40px;transition:background-color .25s ease,color .25s ease}
 .nav a.active{background:#1a1a1a;color:#faf8f2}
